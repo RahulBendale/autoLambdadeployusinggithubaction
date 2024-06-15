@@ -33,7 +33,7 @@ jobs:
       run: |
         # Constants
         S3_BUCKET=autolambdabucket
-        S3_KEY=autolambdabucketfile
+        S3_KEY=lambdafunction.py
         LAMBDA_FUNCTION_NAME=autolambdadeploy
         # Download the existing zip from S3
         aws s3 cp s3://$S3_BUCKET/$S3_KEY existing_lambda.zip
