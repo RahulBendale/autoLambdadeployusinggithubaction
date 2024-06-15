@@ -1,4 +1,5 @@
 import json
+import os
 
 def lambda_handler(event, context):
     print('My first aws lambda function with python!')
