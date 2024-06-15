@@ -32,9 +32,9 @@ jobs:
     - name: Deploy Modified Files
       run: |
         # Constants
-        S3_BUCKET=<YOUR S3 BUCKET>
-        S3_KEY=<FILE_NAME.zip>
-        LAMBDA_FUNCTION_NAME=<NAME OF THE LAMBDA FUNCTION>
+        S3_BUCKET=autolambdabucket
+        S3_KEY=autolambdabucketfile
+        LAMBDA_FUNCTION_NAME=autolambdadeploy
         # Download the existing zip from S3
         aws s3 cp s3://$S3_BUCKET/$S3_KEY existing_lambda.zip
         # Unzip the existing package
